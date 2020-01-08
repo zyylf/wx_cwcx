@@ -1,0 +1,26 @@
+<template name='mode'>
+
+<view class='history-table-wrap'>
+  
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">编号</view>
+          <view class="th th2">面积</view>
+          <view class="th th3">状态</view>
+          <view class="th th4">客户</view>
+          <view class="th th5">备注</view>
+      </view>
+      
+      <view class="tr" wx:for='{{datalist}}' wx:for-item='item' wx:for-index='id' wx:key='key'>
+          <view class="td td1">{{item.id}}</view>
+          <view class="td td2">{{item.area}}</view>
+          <view class="td td3">{{item.state}}</view>
+          <view class="td td4">{{item.kehu}}</view>
+          <view class="td td5">{{item.beizhu}}</view>
+      </view>
+      
+    </view>
+ </view>
+
+
+ </template>

@@ -1,0 +1,11 @@
+
+<import src="../mode/mode.wxml" />
+
+
+<view class='titleflex'>
+<text class='title'>5栋</text>
+</view>
+
+<template is='mode' data="{{datalist}}" />
+
+

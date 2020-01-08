@@ -1,0 +1,28 @@
+
+<view>
+<swiper vertical='{{false}}' indicator-dots='true' autoplay='true' interval='5000' circular='true'>
+    <swiper-item>
+    <!-- <image src='/images/zhengmen.jpg' /> -->
+    <image src='https://s2.ax1x.com/2020/01/08/l2enRx.jpg' />
+    
+    </swiper-item>
+
+    <swiper-item>
+    <!-- <image src='/images/yuanqu.jpg' /> -->
+    <image src='https://s2.ax1x.com/2020/01/08/l2eMQK.jpg' />
+    </swiper-item>
+
+    <swiper-item>
+    <!-- <image src='/images/tielu.jpg'/> -->
+    <image src='https://s2.ax1x.com/2020/01/08/l2eQsO.jpg' />
+    </swiper-item>
+</swiper>
+</view>
+
+<view>
+<button class='jc jt' catchtap='Jumpto1'>1栋</button>
+<button class='jc jt' catchtap='Jumpto2'>2栋</button>
+<button class='jc jt' catchtap='Jumpto3'>3栋</button>
+<button class='jc jt' catchtap='Jumpto4'>4栋</button>
+<button class='jc jt' catchtap='Jumpto5'>5栋</button>
+</view>

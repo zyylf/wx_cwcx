@@ -1,0 +1,34 @@
+/* pages/cw/cw.wxss */
+
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:rgb(255, 255, 255);
+}
+
+.titleimg{
+  display:flex;
+  width:30%;
+  height:280rpx;
+  
+}
+
+ 
+.journey-container{
+  margin-top:300rpx;
+  border:1px solid rgb(235, 12, 12);
+  width:200rpx;
+  height:80rpx;
+  border-radius:5px;
+  text-align:center;
+}
+
+.journey{
+  font-size:32rpx;
+  font-weight:bold;
+  line-height:80rpx;
+  color:rgb(235, 12, 12);
+  aling-item:center;
+}
+
