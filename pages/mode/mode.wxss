@@ -2,7 +2,7 @@
   margin-top:20rpx;
   position: absolute;
   width: 668rpx;
-  height: 800rpx;
+  height: 1000rpx;
   left: 50%;
   margin-left: -334rpx;
   top: 70rpx;
