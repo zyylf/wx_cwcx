@@ -1,9 +1,18 @@
 
 
-// var dataobj = require('../../data/data.js');
 import {DBPost} from '../../db/DBPost.js';
 
-var listnumber = 'list4';
+
+
+//所有仓位数据合并
+var listnumber = ['list1', 'list2', 'list3', 'list4', 'list5'];
+var dataobj1 = new DBPost(listnumber[0]).getAllPostData();   
+var dataobj2 = new DBPost(listnumber[1]).getAllPostData();  
+var dataobj3 = new DBPost(listnumber[2]).getAllPostData();
+var dataobj4 = new DBPost(listnumber[3]).getAllPostData();
+var dataobj5 = new DBPost(listnumber[4]).getAllPostData(); 
+var dataobj = [];
+dataobj = dataobj.concat(dataobj1, dataobj2, dataobj3, dataobj4, dataobj5)   
 
 
 Page({
@@ -12,14 +21,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    dongshu:'4栋'
+    dongshu:'所有仓位'
     },
 
     bindKeyInput: function (e) {       
       //本行用e.detail.value直接取得输入值，并进行查询
-     this.area = new DBPost(listnumber,e.detail.value);
-      this.areaid = this.area.getAreaById();
-      var dataobj = new DBPost(listnumber); 
+     
+      var len = listnumber.length;
+      for (var i=0;i<len;i++){
+        this.area = new DBPost(listnumber[i],e.detail.value);
+        this.areaid = this.area.getAreaById();
+                   
       if(e.detail.value){
         this.setData({                 
           datalist : this.areaid     
@@ -27,9 +39,9 @@ Page({
       }
       else{
         this.setData({
-          datalist:dataobj.getAllPostData()
+          datalist:dataobj
         })
-      }
+      }}
 
       
 
@@ -42,10 +54,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-      var dataobj = new DBPost(listnumber);      
+  onLoad: function () {     
       this.setData({
-        datalist:dataobj.getAllPostData()        
+        datalist:dataobj        
       })
 
 

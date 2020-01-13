@@ -21,20 +21,20 @@ swiper image{
 
 
 .jc{
-  margin-top:400rpx;
+  margin-top:100rpx;
   border:1px solid rgb(235, 12, 12);
   width:200rpx;
-  height:90rpx;
+  height:50rpx;
   border-radius:5px;
   text-align:center;
 }
 
 .jt{
-  margin-top:40rpx;  
-  margin-bottom:20rpx;
+  margin-top:30rpx;  
+  margin-bottom:30rpx;
   font-size:28rpx;
   font-weight:bold;
-  line-height:50rpx;
+  line-height:40rpx;
   color:rgb(235, 12, 12);
   align-item:center;
 }

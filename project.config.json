@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.1",
-	"appid": "wx74b6195bc0907d8b",
+	"appid": "wx56ce194b0996e4d8",
 	"projectname": "wx_study",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -73,6 +73,19 @@
 					"name": "pages/5/5",
 					"pathName": "pages/5/5",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kz/kz",
+					"pathName": "pages/kz/kz",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/4/4",
+					"pathName": "pages/4/4",
 					"scene": null
 				}
 			]

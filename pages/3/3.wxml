@@ -1,10 +1,7 @@
 
 <import src="../mode/mode.wxml" />
 
-
-<view class='titleflex'>
-<text class='title'>3栋</text>
-</view>
+<template is='idcx' data='{{dongshu}}'/>
 
 <template is='mode' data="{{datalist}}" />
 

@@ -1,24 +1,51 @@
 
 
-var dataobj = require('../../data/data.js');
+// var dataobj = require('../../data/data.js');
+import {DBPost} from '../../db/DBPost.js';
+
+var listnumber = 'list5';
 
 
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
-     
+    dongshu:'5栋'
     },
+
+    bindKeyInput: function (e) {       
+      //本行用e.detail.value直接取得输入值，并进行查询
+     this.area = new DBPost(listnumber,e.detail.value);
+      this.areaid = this.area.getAreaById();
+      var dataobj = new DBPost(listnumber); 
+      if(e.detail.value){
+        this.setData({                 
+          datalist : this.areaid     
+      })
+      }
+      else{
+        this.setData({
+          datalist:dataobj.getAllPostData()
+        })
+      }
+
+      
+
+
+    },
+
+
+
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-      
+  onLoad: function () {
+      var dataobj = new DBPost(listnumber);      
       this.setData({
-        datalist:dataobj.list5
+        datalist:dataobj.getAllPostData()        
       })
 
 

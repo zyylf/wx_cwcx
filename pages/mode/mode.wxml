@@ -1,3 +1,26 @@
+<template name='idcx'>
+
+<view class="page-section">    
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="4" bindinput="bindKeyInput" placeholder="请输入仓位编号(4位数字)："/>
+      </view>
+    </view>
+  </view>
+
+
+<view class='titleflex'>
+<text class='title'>{{ dongshu }}</text>
+</view>
+</template>
+
+
+
+
+
+
+
+
 <template name='mode'>
 
 <view class='history-table-wrap'>
@@ -11,7 +34,7 @@
           <view class="th th5">备注</view>
       </view>
       
-      <view class="tr" wx:for='{{datalist}}' wx:for-item='item' wx:for-index='id' wx:key='key'>
+      <view class="tr" wx:for='{{datalist}}' wx:for-item='item' wx:for-index='id' wx:key='key' data-id='{{item.id}}'>
           <view class="td td1">{{item.id}}</view>
           <view class="td td2">{{item.area}}</view>
           <view class="td td3">{{item.state}}</view>

@@ -25,4 +25,6 @@
 <button class='jc jt' catchtap='Jumpto3'>3栋</button>
 <button class='jc jt' catchtap='Jumpto4'>4栋</button>
 <button class='jc jt' catchtap='Jumpto5'>5栋</button>
+<button class='jc jt' catchtap='Jumptoall'>查询</button>
+
 </view>
